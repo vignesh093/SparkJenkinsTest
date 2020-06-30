@@ -97,6 +97,6 @@
       <mainClass>com.hcl.dataops.hdfswrite</mainClass>
     </configuration>
   </plugin>
-		</plugins>
+     </plugins>
 	</build>
 </project>
