@@ -104,7 +104,7 @@
         <snapshotRepository>
             <id>deployment</id>
             <name>Internal Snapshot Releases</name>
-            <url>http://clouderavm1.southindia.cloudapp.azure.com:8081/repository/SparkNexus/</url>
+            <url>http://clouderavm00.southindia.cloudapp.azure.com:8081/repository/SparkNexus/</url>
         </snapshotRepository>
     </distributionManagement>
 
