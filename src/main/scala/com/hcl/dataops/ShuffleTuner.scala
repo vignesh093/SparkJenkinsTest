@@ -51,7 +51,7 @@ object ShuffleTuner {
     
     val appid = spark.sparkContext.applicationId
     
-    writeappidtofile(appid)
+    //writeappidtofile(appid)
 
     val schema = new StructType()
       .add("ssn", StringType, true)
