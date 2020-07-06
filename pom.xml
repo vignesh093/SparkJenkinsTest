@@ -55,6 +55,11 @@
 	<build>
 		<sourceDirectory>src/main/scala</sourceDirectory>
 		<plugins>
+			 <plugin>
+        		<groupId>org.apache.maven.plugins</groupId>
+        		<artifactId>maven-release-plugin</artifactId>
+        		<version>2.5.2</version>
+      		</plugin>
 			<plugin>
 				<groupId>net.alchim31.maven</groupId>
 				<artifactId>scala-maven-plugin</artifactId>
@@ -101,11 +106,19 @@
     		 </plugins>
 	</build>
     <distributionManagement>
-        <snapshotRepository>
-            <id>deployment</id>
+    	<snapshotRepository>
+            <id>deployment-snapshot</id>
             <name>Internal Snapshot Releases</name>
             <url>http://clouderavm00.southindia.cloudapp.azure.com:8081/repository/SparkNexus/</url>
         </snapshotRepository>
-    </distributionManagement>
 
+        <repository>
+            <id>deployment-release</id>
+            <name>Internal Release</name>
+            <url>http://clouderavm00.southindia.cloudapp.azure.com:8081/repository/SparkNexusRelease/</url>
+        </repository>
+    </distributionManagement>
+    <scm>
+    	<connection>scm:git:git@github.com:vignesh093/SparkJenkinsTest.git</connection>
+    </scm>
 </project>
