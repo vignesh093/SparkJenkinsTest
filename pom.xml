@@ -118,7 +118,8 @@
         </repository>
     </distributionManagement>
     <scm>
-    	<connection>scm:git:git@github.com:vignesh093/SparkJenkinsTest.git</connection>
+	<url>https://github.com/vignesh093/SparkJenkinsTest</url>
+    	<connection>scm:git:https://github.com/vignesh093/SparkJenkinsTest.git</connection>
       <tag>shuffletuning-1</tag>
   </scm>
 </project>
